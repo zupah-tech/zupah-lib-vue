@@ -1,0 +1,87 @@
+/**
+ * button custom
+ */
+.zu-button {
+    border-radius: var(--zu-border-radius);
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--zu-color-primary);
+    border: 1px solid var(--zu-color-primary);
+    color: var(--zu-background-primary);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.zu-button.w-ini {
+    width: initial;
+}
+
+.zu-button.w-50 {
+    width: 50%;
+}
+
+.zu-button.out {
+    background-color: var(--zu-background-primary);
+    color: var(--zu-color-primary);
+}
+
+.zu-button.out-black {
+    border-color: #000000;
+    background-color: var(--zu-background-primary);
+    color: #000000;
+    border: 1px solid #000;
+}
+
+.zu-button:hover,
+.zu-button:active {
+    border-color: var(--zu-color-primary);
+    background-color: var(--zu-color-primary);
+    color: var(--zu-background-primary);
+    box-shadow: var(--zu-box-shadow);
+}
+
+.zu-button.out-black:hover,
+.zu-button.out-black:active {
+    border-color: var(--zu-color-primary);
+    box-shadow: var(--zu-box-shadow);
+    background-color: var(--zu-background-primary);
+    color: var(--zu-color-primary);
+}
+
+.zu-button span {
+    box-sizing: border-box;
+}
+
+.zu-button span {
+    float: left;
+}
+
+.zu-button span.icon {
+    margin-left: 18px;
+    margin-right: 10px;
+}
+
+.zu-button .out span {
+    background-color: var(--zu-background-primary);
+    color: var(--zu-color-primary);
+}
+
+.zu-button .out span:hover,
+.zu-button .out span:active {
+    border-color: var(--zu-color-primary);
+}
+
+
+.zu-button:disabled,
+.zu-button:disabled:hover {
+    background-color: var(--zu-color-grey);
+    color: var(--zu-background-primary);
+    border: var(--zu-color-grey);
+}
+
+.zu-button.h-50 {
+    height: 50px;
+}

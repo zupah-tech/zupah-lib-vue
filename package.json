@@ -1,0 +1,36 @@
+{
+  "name": "zupah-lib-vue",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/zu-vue.umd.cjs",
+  "module": "./dist/zu-vue.js",
+  "exports": {
+    ".": {
+      "import": "./dist/zu-vue.js",
+      "require": "./dist/zu-vue.umd.cjs"
+    },
+    "./style.css": "./dist/zu-ds.css"
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --emitDeclarationOnly && vite build",
+    "types": "vue-tsc ",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.4.21",
+    "zu-vue": "file:dist/zu-vue.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
+  }
+}
