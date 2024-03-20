@@ -1,5 +1,5 @@
 <template>
-    <button :class="('zu-button ' + className)" @click="$emit('click')">
+    <button :type="type" class="btn" :class="('zu-button ' + className)" @click="$emit('click')">
         <span class="icon material-icons" v-if="icon">
             {{ icon }}
         </span>
@@ -12,6 +12,7 @@
 <script lang="ts">
 
 import { ref } from "vue";
+import type { PropType, ButtonHTMLAttributes } from 'vue';
 
 export default {
     name: 'ZuButton',
@@ -28,6 +29,11 @@ export default {
             type: String,
             required: false,
             default: ''
+        },
+        type: {
+            type: String as PropType<ButtonHTMLAttributes['type']>,
+            required: false,
+            default: "button"
         }
     },
     setup(props) {

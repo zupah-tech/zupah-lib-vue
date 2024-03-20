@@ -1,6 +1,3 @@
-/* Theme variables */
-import './theme/zu.css';
-
 /* Components load */
 import ZuButton from "./components/ZuButton.vue";
 import ZuInput from "./components/ZuInput.vue";

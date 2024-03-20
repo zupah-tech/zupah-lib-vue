@@ -1,0 +1,106 @@
+$grid-columns: 12;
+$grid-gutter-width: 0;
+$font-family-base: "Inter", Arial, sans-serif;
+$body-font-family: "Inter", Arial, sans-serif;
+$btn-font-family: "Inter", Arial, sans-serif;
+$font-size-xs: 16px;
+
+$font-size-xl: 1.25rem;
+$grid-breakpoints-xs: 350px;
+$grid-breakpoints-sm: 768px;
+$grid-breakpoints-md: 1028px;
+$grid-breakpoints-lg: 1200px;
+$grid-breakpoints-xl: 1500px;
+$grid-breakpoints-xxl: 1900px;
+$grid-breakpoints: (
+    // Extra small screen / phone
+    xs: 0,
+    // Small screen / phone
+    sm: $grid-breakpoints-sm,
+    // Medium screen / tablet
+    md: $grid-breakpoints-md,
+    // Large screen / desktop
+    lg: $grid-breakpoints-lg,
+    // Extra large screen / wide desktop
+    xl: $grid-breakpoints-xl,
+    // Extra large screen / 4k
+    xxl: $grid-breakpoints-xxl
+);
+
+
+// Referente a nova estilização
+$container-wrapper-max-widths: (
+    md: 1028px,
+    lg: 1200px,
+    xl: 1400px,
+    ) !default;
+
+
+// Colors
+$primary: #0000FF !default;
+$secondary: #fff !default;
+$success: #4ac31b !default;
+$info: #34ade1 !default;
+$warning: #FFC107 !default;
+$danger: #ff0800 !default;
+$light: #f7f7f7 !default;
+$dark: #1A1A1A !default;
+$lightGrey: #E6E6E6 !default;
+$grey: #E1E1E1 !default;
+
+$blue: #0000FF;
+$white: #fff !default;
+
+$font: #222;
+$btn-color: #222;
+$theme-colors : ("primary" : $primary,
+    "secondary" : $secondary,
+    "success" : $success,
+    "info" : $info,
+    "warning" : $warning,
+    "danger" : $danger,
+    "light" : $light,
+    "dark" : $dark,
+    "lightGrey" : $lightGrey,
+    "white" : $white,
+    "grey" : $grey,
+    "blue": $blue
+);
+// DS colors
+
+$zu-blue-100: #FDF0EA;
+$zu-blue-150: #b2b2ff;
+$zu-blue-200: #9999ff;
+$zu-blue-300: #7f7fff;
+$zu-blue-400: #6666ff;
+$zu-blue-500: #4c4cff;
+$zu-blue-600: #3232ff;
+$zu-blue-700: #3232ff;
+$zu-blue-800: #1919ff;
+$zu-blue-900: #0000ff;
+
+$zu-gray-040-solid: #F5F5F5;
+$zu-gray-070-solid: #EDEDED;
+$zu-gray-100-solid: #E5E5E5;
+$zu-gray-250-solid: #BFBFBF;
+$zu-gray-550-solid: #737373;
+$zu-gray-900-solid: #1A1A1A;
+
+
+$zu-blues : ("zu-blue-100": $zu-blue-100,
+    "zu-blue-150": $zu-blue-150,
+    "zu-blue-200": $zu-blue-200,
+    "zu-blue-300": $zu-blue-300,
+    "zu-blue-400": $zu-blue-400,
+    "zu-blue-500": $zu-blue-500,
+    "zu-blue-600": $zu-blue-600,
+    "zu-blue-700": $zu-blue-700,
+    "zu-blue-800": $zu-blue-800);
+
+
+$zu-grays-solid : ("zu-gray-040-solid": $zu-gray-040-solid,
+    "zu-gray-070-solid": $zu-gray-070-solid,
+    "zu-gray-100-solid": $zu-gray-100-solid,
+    "zu-gray-250-solid": $zu-gray-250-solid,
+    "zu-gray-550-solid": $zu-gray-550-solid,
+    "zu-gray-900-solid": $zu-gray-900-solid);

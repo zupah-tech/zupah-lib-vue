@@ -1,16 +1,17 @@
 <template>
-    <div :class="className" :for="id" class="zu-input">
+
+    <div :class="className" class="form-floating">
+        <input class="form-control" @input="updateValue" :type="type" :name="name" :id="id" :value="modelValue"
+            :maxlength="maxlength" @change="onChange" @focus="onFocus" @blur="onBlur" @focusout="onFocusOut"
+            autocomplete="false" />
 
         <label :for="id">
             {{ label }}
         </label>
 
-        <input @input="updateValue" :type="type" :name="name" :id="id" :value="modelValue" :maxlength="maxlength"
-            @change="onChange" @focus="onFocus" @blur="onBlur" @focusout="onFocusOut" autocomplete="false" />
-
         <div v-if="maxlength > 0 && count" class="count">{{ modelValue?.length }} de {{ maxlength }}</div>
-
     </div>
+
 </template>
 
 <script lang="ts">
